@@ -19,21 +19,21 @@
     padding-left: 35px;
   }
   &__list-link{
-    padding-bottom: 1px;
+    padding: 0 2px 1px;
     color: $title;
     text-transform: uppercase;
     transition: all .3s;
-    @extend %quicksand-400;
+    @extend %roboto-400;
     &:hover{
     color: $accent;
     border-bottom: solid 1px $accent;
-    @extend %quicksand-500;
+    @extend %roboto-700;
     }
   }
   &__list-link--active{
     color: $accent;
     border-bottom: solid 1px $accent;
-    @extend %quicksand-500;
+    @extend %roboto-700;
   }
 }
 .user-nav{
