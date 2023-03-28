@@ -8,7 +8,7 @@ const imagemin      = require('gulp-imagemin');
 const del           = require('del');
 const browserSync   = require('browser-sync').create();
 
-
+ 
 function browsersync() {
   browserSync.init({
         server: {
@@ -24,7 +24,8 @@ function styles() {
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
-      grid: true
+      add: true,
+      grid: false
     }))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
@@ -34,6 +35,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
