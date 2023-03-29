@@ -390,6 +390,121 @@ footer{
   }
 }
 
+.product{
+  padding: 105px 0 120px;
+  text-align: center;
+  &__items{
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+  &__link{
+    border: 1px solid $accent;
+    padding: 16px 28px;
+    color: $title;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  
+}
+
+.product-item{
+  max-width: 370px;
+  text-align: center;
+  &:hover{
+    .product-item__link-box{
+      transform: translateY(0);
+    }
+  }
+  &__img-box{
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  &__images{
+    object-fit: cover;
+  }
+  &__link-box{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 14px 22px;
+    width: 212px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(300%);
+    transition: all .3s;
+  }
+  &__link{
+    display: inherit;
+    path{
+      transition: all .3s;
+    }
+  }
+  &__link:hover{
+      path{
+      fill: $accent;
+    }
+  }
+  &__link--line::before,
+  &__link--line::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    top: 10px;
+  }
+  &__link--line::before{
+    left: 80px;
+  }
+  &__link--line::after {
+    right: 80px;
+  }
+  &__title{
+    color: $title;
+    padding: 15px 0 20px;
+  }
+  &__price{
+    display: flex;
+    justify-content: center;
+    @extend %roboto-400;
+  }
+  &__new-price{
+    padding: 0 12px;
+    color: $title;
+  }
+  &__old-price{
+    padding: 0 12px;
+    text-decoration: line-through;
+  }
+  &--sale{
+    .product-item__img-box::before{
+      content: "SALE";
+      line-height: 1;
+      padding: 8px 10px;
+      @extend %btn;
+      position: absolute;
+      left: 25px;
+      top: 25px;
+    }
+  }
+}
+
+.star{
+  margin: 0 auto;
+}
+
 
 
 
