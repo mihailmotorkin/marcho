@@ -75,6 +75,7 @@
     font-size: 48px;
     color: #15181d;
     margin-bottom: 30px;
+    @extend %roboto-400;
   }
 }
 
@@ -725,8 +726,11 @@ footer{
   &__form-link{
     color: $accent;
   }
+  &__text{
+    @extend %quicksand-500;
+    margin-bottom: 25px;
+  }
 }
-
 
 
  
