@@ -732,7 +732,34 @@ footer{
   }
 }
 
+.page-404{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 570px;
+    width: 100%;
+  }
+  &__title{
+    font-size: 48px;
+    line-height: 26px;
+    @extend %roboto-700;
+    color: #28384f;
+    margin-bottom: 40px;
+  }
+  &__text{
+    margin-bottom: 55px;   
+    max-width: 466px 
+  }
+  &__link{
+    @extend %btn
+  }
+}
 
- 
+
+
 
 @import 'media';
