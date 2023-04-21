@@ -1739,6 +1739,142 @@ footer{
   }
 }
 
+.blog-one{
+  &__left-img{
+    float: left;
+    margin-right: 30px;
+  }
+  &__text{
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 25px;
+    h4 {
+        @extend %roboto-500;
+        font-size: 22px;
+        color: $title;
+        margin: 25px 0;
+      }
+    
+      p {
+        margin: 30px 0;
+      }
+    
+      blockquote {
+        @extend %roboto-400;
+        color: $title;
+        font-size: 22px;
+        line-height: 32px;
+        background-color: $bg;
+        margin-bottom: 30px 0;
+        padding: 36px;
+        border-left: 3px solid $accent;
+      }
+  }
+  &__info{
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__info-link{
+    margin-right: 30px;
+    padding-left: 28px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 3px;
+      width: 16px;
+      height: 16px;
+      background-image: url('../images/icons/calendar.svg');
+
+    }
+  }
+  &__info-link--comments{
+    &::before{
+      background-image: url('../images/icons/comment-blog.svg');
+    }
+  }
+  &__info-link--author{
+    &::before{
+      background-image: url('../images/icons/user-blog.svg');
+    }
+  }
+  &__form-title{
+   @extend %roboto-700;
+   font-size: 24px;
+   color: $title;
+   text-transform: uppercase;
+   margin: 35px 0 25px;
+  }
+  .comments-form{
+    border-bottom: none;
+  }
+  &__box{
+    margin: 25px 0 35px;
+    padding: 0 23px 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__tags{
+    span{
+      color: $title;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+  &__share{
+    span{
+      color: $title;
+      @extend %roboto-500;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    a{
+      margin: 0 7px;
+      vertical-align: middle;
+      path{
+        fill: #727272;
+      }
+      &:hover{
+        path{
+          fill: $accent;
+        }
+      }
+    }
+  }
+  &__author{
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+  }
+  &__author-img{
+    margin-right: 30px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+  }
+  &__author-title{
+    @extend %roboto-500;
+    font-size: 22px;
+    color: $title;
+    margin-bottom: 25px;
+  }
+  &__comments{
+    border-bottom: 1px solid #ececec;
+    .comments__content-top{
+      margin-bottom: 5px;
+    }
+  }
+  &__comments-title{
+    @extend %roboto-700;
+    font-size: 24px;
+    color: $title;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+}
 
 
 
