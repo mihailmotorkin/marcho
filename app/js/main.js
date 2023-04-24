@@ -118,9 +118,28 @@ function initializeClock(id, endtime) {
 
 const deadline = $('.promo__clock').attr('data-time');
 initializeClock('promo__clock', deadline);
-  
+
+
+
+
 });
 
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+
+
+let map;
+
+async function initMap() {
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: 40.72525544502759, lng: -73.99894021293272 },
+    zoom: 13,
+  });
+}
+
+initMap();
+
