@@ -17,6 +17,9 @@
         <img class="logo__img" src="images/logo.png" alt="logo">
       </a>
       <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
         <ul class="menu__list">
           <li class="menu__list-item">
             <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
@@ -55,60 +58,55 @@
   </div>
 </header>
 
-
 <main class="main">
-  
-  <section class="top">
-    <div class="top__container" style="background-image: url('../images/top-bg.jpg');">
-      <div class="container">
-        <h2 class="top__title">LOG IN</h2>
-        <div class="breadcrumbs">        
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Log in</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="modal">
+<section class="top">
+  <div class="top__container" style="background-image: url('../images/top-bg.jpg');">
     <div class="container">
-      <div class="modal__links">
-        <a class="modal__link" href="#">REGISTER</a>
-        <a class="modal__link modal__link--active" href="#">LOGIN</a>
+      <h2 class="top__title">LOG IN</h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Log in</a>
+          </li>
+        </ul>
       </div>
-      <form class="modal__form">
-        <label class="modal__label">
-          Username or email address*
-          <input class="modal__input" type="text" required>
-        </label>
-        <label class="modal__label">
-          Password*
-          <input class="modal__input" type="password" required>
-        </label>
-        <label class="modal__label">
-          <input type="checkbox">
-          Remember me
-        </label>
-        <button class="modal__btn" type="submit">LOG IN</button>
-        <a class="modal__form-link" href="#">Lost your password?</a>
-      </form>
     </div>
-  </section>
+  </div>
+</section>
+<section class="modal">
+  <div class="container">
+    <div class="modal__links">
+      <a class="modal__link" href="#">REGISTER</a>
+      <a class="modal__link modal__link--active" href="#">LOGIN</a>
+    </div>
+    <form class="modal__form">
+      <label class="modal__label">
+        Username or email address*
+        <input class="modal__input" type="text" required>
+      </label>
+      <label class="modal__label">
+        Password*
+        <input class="modal__input" type="password" required>
+      </label>
+      <label class="modal__label">
+        <input type="checkbox">
+        Remember me
+      </label>
+      <button class="modal__btn" type="submit">LOG IN</button>
+      <a class="modal__form-link" href="#">Lost your password?</a>
+    </form>
+  </div>
+</section>  
 </main>
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <di v class="footer-top">
       <div class="footer-top__item footer-top__contact">
-        <a class="logo footer-t
-        op__logo" href="#">
+        <a class="logo footer-top__logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
         <a class="footer-top__address" href="#">
