@@ -1,0 +1,18 @@
+.top {
+  &__container {
+    max-width: 1700px;
+    padding: 135px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  &__title {
+    font-size: 48px;
+    color: #15181d;
+    margin-bottom: 30px;
+    @extend %roboto-400;
+  }
+}
